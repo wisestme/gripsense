@@ -1,7 +1,7 @@
 /* IMPORT LOCAL FONTS */
 @font-face {
 	font-family: catamaran;
-	src: url(../fonts/Catamaran.otf);
+	src: url(../fonts/Catamaran.ttf);
 }
 
 @font-face {
@@ -26,7 +26,7 @@
 
 svg {
 	width: 30px;
-	height: 30p
+	height: 30px;
 }
 
 body {
@@ -39,6 +39,11 @@ h3,
 a {
 	font-family: catamaran, sans-serif;
 }
+
+/*.clear {
+	content: ' ';
+	clear: both;
+}*/
 
 /* Header */
 header .container {
@@ -64,14 +69,13 @@ header .container {
 h1 {
 	color: #00bfa5;
 	font-size: 26px;
-	margin-bottom: 5px;
 }
 
 header h2 {
 	font-size: 16px;
 }
 
-header a {
+a {
 	text-decoration: none;
 	color: #fff;
 }
@@ -88,13 +92,15 @@ header a {
 
 /* HAMBURGER MODAL*/
 .hamburger_modal {
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
-	position: absolute;
-	top: 0;
+	position: fixed;
+	top: -100vh;
 	left: 0;
 	color: #fff;
 	fill: #fff;
+	transition: 0.5s ease;
+	z-index: 2;
 }
 
 .hamburger_modal .container {
@@ -105,9 +111,42 @@ header a {
 	padding: 2em;
 }
 
+.hamburger_modal a {
+	margin-bottom: 0.5em;
+	font-size: 22px;
+}
+
 .close_modal {
 	float: right;
+	margin-right: 0.2em;
 }
+
+.hamburger_modal nav {
+	flex-direction: column;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.hamburger_modal .copy_info {
+	position: absolute;
+	bottom: 10px;
+	text-align: center;
+	width: 90%;
+	padding: 1em;
+}
+
+.hamburger_modal .copy_info p:last-child {
+	text-align: right;
+	margin-top: 3px;
+}
+
+.hamburger_modal .social {
+	width: 50%;
+	justify-content: space-around;
+	margin: 4em auto;
+}
+
 /* TEMPORAL CODE*/
 main {
 	text-align: center;
