@@ -1,0 +1,101 @@
+/* IMPORT LOCAL FONTS */
+@font-face {
+	font-family: catamaran;
+	src: url(../fonts/Catamaran.otf);
+}
+
+@font-face {
+	font-family: roboto;
+	src: url(../fonts/Roboto.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* General */
+.flex {
+	display: flex;
+}
+
+.no_small {
+	display: none;
+}
+
+svg {
+	width: 30px;
+	height: 30p
+}
+
+body {
+	font-family: roboto, sans-serif;
+}
+
+h1,
+h2,
+h3,
+a {
+	font-family: catamaran, sans-serif;
+}
+
+/* Header */
+header .container {
+	padding: 2em;
+	background: #152F45;
+	color: #fff;
+}
+
+.hamburger_menu {
+	float: right;
+}
+
+.header_logo {
+	width: 88%;
+	justify-content: space-around;
+	align-items: center;
+}
+.header_logo img {
+	width: 100px;
+	margin-right: 10px;
+}
+
+h1 {
+	color: #00bfa5;
+	font-size: 26px;
+	margin-bottom: 5px;
+}
+
+header h2 {
+	font-size: 16px;
+}
+
+header a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.business_info {
+	flex-direction: column;
+	align-items: center;
+}
+
+.business_info > div {
+	text-align: center;
+	margin: 1.5em 0;
+}
+
+/* TEMPORAL CODE*/
+main {
+	text-align: center;
+	margin: 4em 0;
+}
+
+/*Colors*/
+/*
+#00BFA5
+#152F45
+#2E4C66
+#92969A
+*/
