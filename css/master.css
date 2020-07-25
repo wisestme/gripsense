@@ -58,7 +58,6 @@ header .container {
 
 .header_logo {
 	width: 88%;
-	justify-content: space-around;
 	align-items: center;
 }
 .header_logo img {
@@ -69,6 +68,7 @@ header .container {
 h1 {
 	color: #00bfa5;
 	font-size: 26px;
+	line-height: 25px;
 }
 
 header h2 {
@@ -88,6 +88,113 @@ a {
 .business_info > div {
 	text-align: center;
 	margin: 1.5em 0;
+}
+
+/* FOOTER */
+footer {
+	background: #161616;
+	color: #fff;
+	padding: 2em;
+}
+
+.footer_logo {
+	align-items: center;
+	margin: 1.5em 0;
+}
+
+.footer_logo img {
+	width: 80px;
+	margin-right: 10px;
+}
+
+.footer_logo h2 {
+	color: #00BFA5;
+	line-height: 25px;
+}
+
+.footer_logo h3 {
+	font-size: 16px;
+}
+
+.mission {
+	margin: 1.5em 0;
+	line-height: 20px;
+}
+
+.social {
+	margin: 1em 0;
+}
+
+.profile .social > div {
+	background: #222;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 10px;
+	border-radius: 5px;
+}
+
+.profile .social svg {
+	width: 20px;
+	height: 20px;	
+}
+
+.upper_footer > div {
+	margin: 4em 0;
+}
+
+.upper_footer h3:first-child {
+	margin: 2em 0 0.4em 0;
+	font-size: 25px;
+}
+
+.upper_footer p {
+	margin-bottom: 1em;
+	letter-spacing: 1px;
+}
+
+.upper_footer span {
+	display: block;
+}
+
+.upper_footer .phone a,
+.upper_footer .phone svg {
+	color: #00BFA5;
+}
+
+.upper_footer .phone a {
+	font-size: 26px;
+	margin-left: 10px;
+}
+
+.lower_footer nav {
+	width: 70%;
+	justify-content: space-around;
+	margin: 2em auto;
+}
+
+.lower_footer nav a{
+	border-right: 1px solid #ffffff22;
+	padding-right: 1.4em;
+}
+
+.lower_footer nav a:last-child {
+	border-right: none;
+}
+
+.lower_footer .copy_info p:last-child {
+	text-align: right;
+	margin-top: 4px;
+}
+
+.wisest {
+	color: #00bfa5
+}
+
+hr {
+	opacity: 0.2
 }
 
 /* HAMBURGER MODAL*/
@@ -151,6 +258,7 @@ a {
 main {
 	text-align: center;
 	margin: 4em 0;
+	height: 50vh;
 }
 
 /*Colors*/
@@ -159,4 +267,5 @@ main {
 #152F45
 #2E4C66
 #92969A
+#161616
 */
