@@ -255,7 +255,7 @@ hr {
 }
 
 /* Phone Modal */
-.phone_modal {
+.phone_modal_icon {
 	position: fixed;
 	right: 1em;
 	bottom: 3em;
@@ -269,6 +269,44 @@ hr {
 	align-items: center;
 	box-shadow: 0 0 4px #00BFA5;
 	color: #161616;
+}
+
+.phone_modal {
+	width: 70%;
+	height: 200px;
+	position: fixed;
+	bottom: 0;
+	right: -400px;
+	background: #161616;
+	border: 2px solid #00BFA5;
+	padding: 1em;
+	border-radius: 5px;
+	color: #fff;
+	fill: #fff;
+	max-width: 400px;
+	transition: 0.5s ease;
+}
+
+.channel {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.contact_channels {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 140px
+}
+
+.close_modal svg {
+	width: 20px;
+	height: 20px;
+}
+
+.channel svg {
+	margin-right: 6px;
 }
 
 /* TEMPORAL CODE*/
