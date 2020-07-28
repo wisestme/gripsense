@@ -254,6 +254,23 @@ hr {
 	margin: 4em auto;
 }
 
+/* Phone Modal */
+.phone_modal {
+	position: fixed;
+	right: 1em;
+	bottom: 3em;
+}
+.phone_quicklinks {
+	width: 45px;
+	height: 45px;
+	background: #00BFA5;
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 0 4px #00BFA5;
+	color: #161616;
+}
+
 /* TEMPORAL CODE*/
 main {
 	text-align: center;
