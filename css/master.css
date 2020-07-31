@@ -61,7 +61,7 @@ header .container {
 	align-items: center;
 }
 .header_logo img {
-	width: 100px;
+	width: 80px;
 	margin-right: 10px;
 }
 
@@ -103,7 +103,7 @@ footer {
 }
 
 .footer_logo img {
-	width: 80px;
+	width: 60px;
 	margin-right: 10px;
 }
 

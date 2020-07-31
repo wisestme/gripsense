@@ -1,0 +1,80 @@
+/* BELOW 500PX */
+@media screen and (max-width: 450px) {
+	.phone_modal {
+		width: 95%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.header_logo img {
+		width: 60px;
+	}
+
+	.lower_footer nav {
+		width: 95%;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.header_logo img {
+		width: 50px;
+	}
+	.contact_channels svg {
+		width: 25px;
+		height: 25px;
+	}
+
+	.phone_modal {
+		width: 100%;
+	}
+
+	.contact_channels p {
+		font-size: 15px;
+	}
+}
+
+/* ABOVE 500PX */
+@media screen and (min-width: 600px) {
+	.business_info {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.no_medium {
+		display: none;
+	}
+
+	.no_small {
+		display: block;
+	}
+
+	body {
+		overflow-x: hidden;
+	}
+
+	.lower_header {
+		position: relative;
+
+	}
+
+	.lower_header nav {
+		position: absolute;
+		width: 60%;
+		max-width: 500px;
+		display: flex;
+		justify-content: space-around;
+		bottom: -70px;
+		left: -32px;
+		padding: 1em;
+		background: #fff;
+		border-radius: 0 8px 0 0;
+	}
+
+	.lower_header nav a {
+		color: #152F45;
+		font-weight: bold;
+		font-size: 18px;
+	}
+}
