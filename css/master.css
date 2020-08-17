@@ -20,6 +20,7 @@
 	display: flex;
 }
 
+.no_vision,
 .no_small {
 	display: none;
 }
@@ -90,11 +91,47 @@ a {
 	margin: 1.5em 0;
 }
 
+/* MAIN */
+
+/* SUBSCRIBE */
+#subscribe {
+	background: #152F45;
+	color: #fff;
+	padding: 1em;
+}
+
+#subscribe h2 {
+	margin-bottom: 1em;
+}
+
+#subscribe input {
+	width: 80%;
+	padding: 1em;
+	margin-bottom: 1em;
+	background: #fff;
+	border: transparent;
+	border-radius: 2px;
+	box-shadow: 2px 2px 8px #222;
+	color: #000;
+}
+
+#subscribe input:last-child {
+	background: #00bfa5;
+	color: #fff;
+	font-weight: bolder;
+	font-size: 16px;
+}
+
 /* FOOTER */
 footer {
 	background: #161616;
 	color: #fff;
 	padding: 2em;
+}
+
+.flex_col_small {
+	display: flex;
+	flex-direction: column;
 }
 
 .footer_logo {
@@ -142,7 +179,7 @@ footer {
 }
 
 .upper_footer > div {
-	margin: 4em 0;
+	margin: 1.5em 0;
 }
 
 .upper_footer h3:first-child {
@@ -157,6 +194,10 @@ footer {
 
 .upper_footer span {
 	display: block;
+}
+
+.upper_footer > .location {
+	background-image: url(../images/map.png);
 }
 
 .upper_footer .phone a,
@@ -184,13 +225,17 @@ footer {
 	border-right: none;
 }
 
-.lower_footer .copy_info p:last-child {
+footer > .container > p:last-child {
 	text-align: right;
-	margin-top: 4px;
+	margin-top: 1em;
+}
+
+.copy_info {
+	text-align: center;
 }
 
 .wisest {
-	color: #00bfa5
+	color: #subscribe input
 }
 
 hr {
