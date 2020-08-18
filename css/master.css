@@ -98,12 +98,10 @@ a {
 	background: ;
 	color: #fff;
 	padding: 1em;
-	background-image: linear-gradient(
-    to bottom,
-    rgba(21,47,69, 0.9),
-    rgba(21,47,69, 1)
-  ), url(../images/gripsense_repair.jpg);
-	#152F45;
+	background-image: linear-gradient(to bottom, rgba(21,47,69, 0.9), rgba(21,47,69, 1)), url(../images/gripsense_repair.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;	
+	background-position: center;
 }
 
 #subscribe h2 {

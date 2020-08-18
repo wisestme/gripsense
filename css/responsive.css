@@ -50,6 +50,9 @@
 }
 
 @media screen and (min-width: 600px) {
+	#subscribe input {
+		max-width: 500px;
+	}
 	.business_info {
 		flex-direction: row;
 		justify-content: space-around;
@@ -57,6 +60,12 @@
 }
 
 @media screen and (min-width: 800px) {
+	#subscribe input {
+		height: 50px;
+	}
+	#subscribe input:last-child {
+		max-width: 200px;
+	}
 	.no_medium {
 		display: none;
 	}
