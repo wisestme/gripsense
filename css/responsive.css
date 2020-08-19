@@ -50,9 +50,19 @@
 }
 
 @media screen and (min-width: 600px) {
+	.showcase {
+		font-size: 22px;
+	}
+
+	.showcase h2 {
+		font-size: 45px;
+	line-height: 70px;
+	}
+
 	#subscribe input {
 		max-width: 500px;
 	}
+
 	.business_info {
 		flex-direction: row;
 		justify-content: space-around;
@@ -60,6 +70,21 @@
 }
 
 @media screen and (min-width: 800px) {
+	.showcase > div {
+		max-width: 750px;
+	}
+
+	.showcase {
+		height: 500px;
+		font-size: 26px;
+	}
+
+	.showcase h2 {
+		font-size: 50px;
+	line-height: 70px;
+	letter-spacing: 2px;
+	}
+
 	#subscribe input {
 		height: 50px;
 	}
@@ -139,7 +164,11 @@
 }
 
 @media screen and (min-width: 1100px) {
-	.business_info h2, p {
+	.showcase {
+		height: 550px;
+	}
+
+	.business_info h2 {
 		font-size: 20px
 	}
 }
