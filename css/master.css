@@ -9,7 +9,7 @@
 	src: url(../fonts/Roboto.ttf);
 }
 
-* {
+body *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -32,6 +32,17 @@ svg {
 
 body {
 	font-family: roboto, sans-serif;
+	overflow-x: hidden;
+	width: 100vw;
+	margin: 0 auto;
+}
+
+.container {
+	padding-right: 1em;
+}
+
+.slick-next::before {
+	display: none;
 }
 
 h1,
@@ -40,6 +51,10 @@ h3,
 a {
 	font-family: catamaran, sans-serif;
 }
+
+.no_medium {
+		display: none;
+	}
 
 /*.clear {
 	content: ' ';
@@ -98,8 +113,6 @@ a {
 	/*height: 400px;*/
 }
 
-
-
 .showcase {
 	/*background: url(../images/technician.png);*/
 	/*background: linear-gradient(to bottom, rgba(0,0,0, 0.5), rgba(21,47,69, 0.5));*/	
@@ -140,9 +153,128 @@ a {
 	background-size: cover;
 }
 
+/* SERVICES */
+#services {
+	margin: 6em 0;
+}
+
+.services_list ul {
+	border: 2px solid #eee;
+	box-shadow: 4px 4px 8px #ddd;
+	display: flex;
+	align-items: flex-start;
+	padding: 0 1em;
+	margin: 2em auto;
+	list-style: none;
+	flex-direction: column;
+	width: 70%;
+	border-radius: 5px;
+	max-width: 350px;
+}
+
+.services_list li {
+	display: flex;
+	margin: 1em 0;
+	font-size: 20px;
+
+}
+
+.services_list svg {
+	width: 30px;
+	height: 30px;
+	margin-right: 1em;
+	
+}
+
+/* SELLING POINTS */
+#selling_points {
+	background: #152F45;
+	padding: 1em;
+	color: #fff;
+	margin-bottom: 8em;
+}
+
+[class^=sellingpoint_] {
+	margin-top: 6em;
+	font-size: 20px;
+}
+
+[class^=sellingpoint_] .icon {
+	border-bottom: 1px solid #555;
+	padding-bottom: 1em;
+	margin-bottom: 1em;	
+}
+
+/*[class^=sellingpoint_] .text {
+	padding: 0 1em 0 0.2em;
+}
+*/
+[class^=sellingpoint_] span {
+	color: #00bfa5;
+}
+
+#selling_points svg {
+	fill: #fff;
+}
+
+[class^=sellingpoint_]:last-child {
+	margin-bottom: 4em;
+	background-image: url(../images/settings_background.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+/* CONTACT FORM */
+#contact_form {
+	padding: 2em;
+
+}
+
+#contact_form form {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	align-items: center;
+}
+
+#contact_form p {
+	margin-bottom: 2em;
+}
+
+#contact_form label {
+	display: none;
+}
+
+#contact_form input {
+	display: block;
+
+}
+
+#contact_form input,
+#contact_form textarea {
+	padding: 0.5em;
+	margin-bottom: 2em;
+	width: 60%;
+	max-width: 300px;
+	border-radius: 2px;
+	border: 1px solid #aaa;
+}
+
+#contact_form input:last-child {
+	background: #00bfa5;
+	color: #fff;
+	font-weight: bolder;
+	font-size: 16px;
+	border: transparent;
+}
+a:hover,
+input[type=submit]:hover {
+	opacity: 0.8;
+}
+
 /* SUBSCRIBE */
 #subscribe {
-	background: ;
+	margin-bottom: 8em;
 	color: #fff;
 	padding: 1em;
 	background-image: linear-gradient(to bottom, rgba(21,47,69, 0.9), rgba(21,47,69, 1)), url(../images/gripsense_repair.jpg);
@@ -213,7 +345,7 @@ footer {
 	margin: 1em 0;
 }
 
-.profile .social > div {
+.profile .social div {
 	background: #222;
 	width: 30px;
 	height: 30px;
@@ -221,6 +353,7 @@ footer {
 	align-items: center;
 	justify-content: center;
 	margin-right: 10px;
+	margin-left: 10px;
 	border-radius: 5px;
 }
 
@@ -286,7 +419,7 @@ footer > .container > p:last-child {
 }
 
 .wisest {
-	color: #subscribe input
+	color: #00bfa5;
 }
 
 hr {
@@ -296,9 +429,9 @@ hr {
 /* HAMBURGER MODAL*/
 .hamburger_modal {
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	position: fixed;
-	top: -100vh;
+	top: -110vh;
 	left: 0;
 	color: #fff;
 	fill: #fff;
@@ -308,10 +441,10 @@ hr {
 
 .hamburger_modal .container {
 	width: 100%;
-	height: 100vh;
+	height: 110vh;
 	background: #152F45;
 	margin: 0 auto;
-	padding: 2em;
+	padding: 4em 2em;
 }
 
 .hamburger_modal a {
@@ -333,7 +466,7 @@ hr {
 
 .hamburger_modal .copy_info {
 	position: absolute;
-	bottom: 10px;
+	bottom: 20px;
 	text-align: center;
 	width: 90%;
 	padding: 1em;
@@ -347,7 +480,7 @@ hr {
 .hamburger_modal .social {
 	width: 50%;
 	justify-content: space-around;
-	margin: 4em auto;
+	margin: 4em auto 0 auto;
 }
 
 /* Phone Modal */
